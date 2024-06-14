@@ -16,7 +16,7 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="weather_default()">
     <header class="header">
         <nav class="navbar container">
             <a class="nav_logo" href="#">
@@ -92,17 +92,17 @@
     </header>
     <div class="card">
         <div class="search">
-            <input type="text" spellcheck="false" placeholder="Please Enter City Name ">
-           <button><img src="/assets//images/search.png" alt=""></button>
+            <input type="text" spellcheck="false" placeholder="Please Enter City Name" id="user_city">
+           <button onclick="getcityname()"><img src="/assets//images/search.png" alt=""></button>
         </div>
              <div class="weather">
-               <img src="/assets//images/drizzle.png" alt="">
-               <h1>22°</h1>
-               <h2>Karachi</h2>
+               <img src="" alt="" id="icon_display">
+               <h1 id="city_temp"></h1>
+               <h2 id="city_name"></h2>
                <div class="sub_weather">
-                <img src="/assets/images/humidity.png" alt=""><b id="hum_val">24%</b>
-                <img id="wind_icon" src="/assets/images/wind.png" alt=""><b id="wind_val">5.5 km/h</b>
-            </div>
+                   <img src="/assets/images/humidity.png" alt=""><b id="hum_val"></b>
+                   <img id="wind_icon" src="/assets/images/wind.png" alt=""><b id="wind_val"></b>
+                </div>
             <div class="headings">
                 <h3 id="headings_hum">Humidity</h3>
                 <h3 id="headings_air">Wind Speed</h3>
