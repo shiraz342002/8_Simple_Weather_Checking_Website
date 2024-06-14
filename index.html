@@ -1,0 +1,117 @@
+<!-- #***********************************************************************************
+#***                                                                                  ***
+#***  Date: 10/6/2024  Time: 10:21 PM     Author:  Shiraz Mazhar                      ***
+#***                                                                                  ***
+#***  Working On: World Clock                                                         ***
+#***                                                                                  ***
+#****************************************************************************************-->
+
+<!-- sample : https://clock-mu-self.vercel.app/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Free Clock 4 You</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar container">
+            <a class="nav_logo" href="#">
+                <i class="ri-sun-cloudy-line"></i>Shiraz Weathers
+            </a>
+            <div class="nav_toggle" id="nav_toggle">
+                <i class="ri-menu-line nav_open"></i>
+                <i class="ri-close-fill nav_close"></i>
+            </div>
+            <div class="nav_menu" id="nav_menu">
+                <ul class="nav_list">
+                    <li><a href="####" class="nav_link">Home</a></li>
+                    <li><a href="####" class="nav_link">Company</a></li>
+                    <li class="drop_down_item">
+                        <div class="nav_link">
+                            Services<i class="ri-arrow-down-s-line dropdown_down_arrow"></i>
+                        </div>
+                        <ul class="dropdown_menu">
+                            <li>
+                                <a href="####" class="dropdown_link">
+                                    <i class="ri-alarm-line"></i>Alarm
+                                </a>
+                            </li>
+                            <li>
+                                <a href="####" class="dropdown_link">
+                                    <i class="ri-time-line"></i>World Clock
+                                </a>
+                            </li>
+                            <li>
+                                <a href="####" class="dropdown_link">
+                                    <i class="ri-timer-2-fill"></i>Stopwatch
+                                </a>
+                            </li>
+                            <li>
+                                <a href="####" class="dropdown_link">
+                                    <i class="ri-timer-line"></i> Timer
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="####" class="nav_link">Products</a></li>
+                    <li class="drop_down_item">
+                        <div class="nav_link">
+                            Users<i class="ri-arrow-down-s-line dropdown_down_arrow"></i>
+                        </div>
+                        <ul class="dropdown_menu">
+                            <li>
+                                <a href="####" class="dropdown_link">
+                                    <i class="ri-user-line"></i>Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="####" class="dropdown_link">
+                                    <i class="ri-lock-2-line"></i>Accounts
+                                </a>
+                            </li>
+                            <li>
+                                <a href="####" class="dropdown_link">
+                                    <i class="ri-message-2-line"></i>Messages
+                                </a>
+                            </li>
+                            <li>
+                                <a href="####" class="dropdown_link">
+                                    <i class="ri-logout-box-line"></i>Logout
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="####" class="nav_link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="card">
+        <div class="search">
+            <input type="text" spellcheck="false" placeholder="Please Enter City Name ">
+           <button><img src="/assets//images/search.png" alt=""></button>
+        </div>
+             <div class="weather">
+               <img src="/assets//images/drizzle.png" alt="">
+               <h1>22°</h1>
+               <h2>Karachi</h2>
+               <div class="sub_weather">
+                <img src="/assets/images/humidity.png" alt=""><b id="hum_val">24%</b>
+                <img id="wind_icon" src="/assets/images/wind.png" alt=""><b id="wind_val">5.5 km/h</b>
+            </div>
+            <div class="headings">
+                <h3 id="headings_hum">Humidity</h3>
+                <h3 id="headings_air">Wind Speed</h3>
+            </div>
+        </div>
+
+                
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
