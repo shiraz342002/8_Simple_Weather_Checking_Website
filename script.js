@@ -1,4 +1,4 @@
-const showMenu = (toggleId, navId) =>{
+const showMenu = (toggleId, navId) =>{                  // bascially for responisive nav bar
     const toggle = document.getElementById(toggleId),
           nav = document.getElementById(navId)
  
