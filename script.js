@@ -37,7 +37,6 @@ async function getweather(user_city){
     else{
             alert("Invalid City name Try Again")
             window.location.reload();
-
     }
     let display_temp=document.getElementById('city_temp');
     display_temp.innerHTML = Math.round(data.main.temp) + " °C";
